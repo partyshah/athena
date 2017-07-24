@@ -10,7 +10,8 @@ class App extends Component {
 
 	    return (
 	      <div>
-	      	<div>Hello Worlds</div>
+	      	<div className="baseDiv">
+	      	</div>
 	      </div>
 	    );
 	}
