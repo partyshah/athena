@@ -8,9 +8,9 @@ class Header extends Component {
     return (
       <div className="header-body">
       	<div className="button-container">
-      		<div className="button find-lesson"></div>
-      		<div className="button upload-lesson"></div>
-      		<div className="button sign-up"></div>
+      		<div className="button find-lesson">Find Lesson</div>
+      		<div className="button upload-lesson">Upload Lesson</div>
+      		<div className="button sign-up">Sign Up</div>
       	</div>
       </div>
     );
