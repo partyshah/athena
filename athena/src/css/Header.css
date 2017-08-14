@@ -30,3 +30,35 @@
 .button:hover {
 	opacity: 1;
 }
+
+svg {
+    position: absolute;
+    width: 10%;
+    left: 10%;
+}
+
+.cls-1, .cls-3 {
+  fill: #fff;
+}
+
+.cls-2 {
+  fill: none;
+  stroke: #231f20;
+  stroke-miterlimit: 10;
+}
+
+.cls-3 {
+  font-size: 72px;
+}
+
+.cls-3, .cls-5 {
+  font-family: KhmerMN, Khmer MN;
+}
+
+.cls-4 {
+  letter-spacing: -0.06em;
+}
+
+.cls-5 {
+  font-size: 300px;
+}
