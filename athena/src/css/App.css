@@ -6,8 +6,8 @@
 /*003327*/
 
 @fontface {
-  font-family: 'Sedgwick Ave Display', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display')
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Montserrat')
 }
 
 html {
@@ -20,7 +20,7 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;
-  font-family: 'Sedgwick Ave Display', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .background-img {
