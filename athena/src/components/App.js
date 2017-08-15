@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import image from '../assets/image.png';
 import '../css/App.css';
 import Header from './Header.js';
 
@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="app-body">
         <Header loggedOut="true"/>
+        <img className="background-img" src={image}/>
         <div className="title-container">
         	<div className="title-self">Athena</div>
         	<div className="subtitle">

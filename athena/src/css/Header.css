@@ -6,9 +6,9 @@
 
 .button-container {
     height: 100px;
-    width: 681px;
+    width: 900px;
     position: relative;
-    left: 47%;
+    left: 29%;
 }
 
 .button {
@@ -16,15 +16,16 @@
 	border-radius: 25px;
 	display: inline-block;
 	margin-right: 55px;
-    position: relative;
-	width: 170px;
-    height: 51px;
-    top: 27px;
-    opacity: 0.8;
-    font-size: 20px;
-    line-height: 54px;
-    cursor: pointer;
-    transition: 0.4s;
+  position: relative;
+  width: 170px;
+  height: 51px;
+  top: 27px;
+  left: 54px;
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 54px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .button:hover {
@@ -32,9 +33,21 @@
 }
 
 svg {
-    position: absolute;
-    width: 10%;
-    left: 10%;
+  position: absolute;
+  width: 6%;
+  left: 5%;
+  font-size: 25px;
+  fill: white;
+  font-family: "KhmerMN", Khmer MN;
+  cursor: pointer;
+}
+
+#ATHENA {
+  font-size: 72px;
+}
+
+#A {
+  font-size: 300px;
 }
 
 .cls-1, .cls-3 {
@@ -52,7 +65,7 @@ svg {
 }
 
 .cls-3, .cls-5 {
-  font-family: KhmerMN, Khmer MN;
+  font-family: "KhmerMN", Khmer MN;
 }
 
 .cls-4 {
