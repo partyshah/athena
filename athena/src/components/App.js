@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import image from '../assets/image.png';
 import '../css/App.css';
 import Header from './Header.js';
+import PageTransition from 'react-router-page-transition';
 
+/*
+
+TODO: add user auth system so that we know if a user is logged in or not
+
+*/
 class App extends Component {
   render() {
     return (
