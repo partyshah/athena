@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import '../css/Header.css';
+import { NavLink, Redirect } from 'react-router-dom';
 
 class Header extends Component {
 
-  render() {
+    constructor(props) {
+        super(props);
+        this.state = {redirect: false}
+    };
+
+    handleOnClick = () => {
+        this.setState({redirect: true});
+    }
+
+    render() {
+
+    if (this.state.redirect) {
+        return <Redirect push to="/" />;
+    }
+
     return (
       <div className="header-body">
-        <div className="logo-container"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3577 1698 335.57 544">
+          <svg onClick={this.handleOnClick} xmlns="http://www.w3.org/2000/svg" viewBox="-3577 1698 335.57 544">
             <g id="Athena_white" transform="translate(-4068.4 1213.97)">
               <g id="Layer_1" data-name="Layer 1" transform="translate(492 528)">
                 <path id="Path_65" data-name="Path 65" class="cls-1" d="M0,286.88" transform="translate(-0.6)"/>
@@ -129,8 +143,8 @@ class Header extends Component {
             </g>
           </svg>
       	<div className="button-container">
-      		<div className="button find-lesson">Find Lesson</div>
-      		<div className="button upload-lesson">Upload Lesson</div>
+      		<NavLink to="FindLesson" className="button find-lesson">Find Lesson</NavLink>
+      		<NavLink to="UploadLesson" className="button upload-lesson">Upload Lesson</NavLink>
       		<div className="button sign-in">Sign In</div>
             <div className="button sign-up">Sign Up</div>
       	</div>

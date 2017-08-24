@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../css/FindLesson.css';
+import '../css/UploadLesson.css';
 
 
-class FindLesson extends Component {
+class UploadLesson extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class FindLesson extends Component {
   }
 }
 
-export default FindLesson;
+export default UploadLesson;
