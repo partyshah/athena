@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import image from '../assets/image.png';
 import Header from './Header.js';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import FindLesson from './FindLesson.js';
 import Landing from './Landing.js';
@@ -20,9 +20,9 @@ class App extends Component {
     	<BrowserRouter>
 	      <div className="app-body">
 	        <Header loggedOut="true"/>
-	        <Route exact path="/" component={Landing}></Route>
-	        <Route path="FindLesson" component={FindLesson}></Route>
-	       	<Route path="UploadLesson" component={UploadLesson}></Route>
+	        <Route exact path="/" component={Landing} />
+	        <Route path="/findlesson" component={FindLesson} />
+	       	<Route path="/uploadlesson" component={UploadLesson} />
 	      </div>
 	    </BrowserRouter>
     );

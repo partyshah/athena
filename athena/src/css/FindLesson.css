@@ -1,0 +1,29 @@
+@fontface {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Montserrat')
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-0 {
+	font-size: 100px;
+	position: relative;
+	top: 10%;
+	left: 10%;
+}
+
+.next-button {
+	background: red;
+	height: 300px;
+	width: 200px;
+}

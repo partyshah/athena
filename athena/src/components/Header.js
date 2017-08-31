@@ -143,8 +143,8 @@ class Header extends Component {
             </g>
           </svg>
       	<div className="button-container">
-      		<NavLink to="FindLesson" className="button find-lesson">Find Lesson</NavLink>
-      		<NavLink to="UploadLesson" className="button upload-lesson">Upload Lesson</NavLink>
+      		<NavLink to="/findlesson" className="button find-lesson">Find Lesson</NavLink>
+      		<NavLink to="/uploadlesson" className="button upload-lesson">Upload Lesson</NavLink>
       		<div className="button sign-in">Sign In</div>
             <div className="button sign-up">Sign Up</div>
       	</div>
