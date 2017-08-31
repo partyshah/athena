@@ -11,7 +11,9 @@ import UploadLesson from './UploadLesson.js'
 
 /*
 
-TODO: add user auth system so that we know if a user is logged in or not
+TODO: Add user auth system so that we know if a user is logged in or not
+TODO: Fix the return to home screen bug that gets rid of the nav bar
+TODO: Fix logo resizing issue... or for that matter, all resizing issues. 
 
 */
 class App extends Component {
