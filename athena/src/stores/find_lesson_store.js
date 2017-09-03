@@ -1,31 +1,61 @@
-/* 
- 
-	Just wanted to try out Flux, don't actually
-	use this file, it would be hyper-ineffiecent
-
-
-*/
-
-
-
 import { EventEmitter } from "events";
 
 class LessonStore extends EventEmitter {
 
-	constructor() {
-		super();
-		this.selection = {
-			"phase1" : 0,
-			"phase2" : 0
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			root: "none",
+			children: [
+			{
+				root: "english",
+				children: []
+			},
+			{
+				root: "history",
+				children: []
+			},
+			{
+				root: "math",
+				children: []
+			},
+			{
+				root: "science",
+				children: []
+			},
+			{
+				root: "arts",
+				children: []
+			},
+			{
+				root: "physical ed.",
+				children: []
+			}
+			]
 		}
+
 	}
 
-	getSelections() {
-		return Object.values(this.selection);
+	getTitle() {
+		return this.state["root"];
+	} 
+
+	getSubsections(){
+		return this.state["children"];
 	}
 
-	getSelectionObject() {
-		return this.selection;
+	getAllSubsectionTitles(subsections) {
+
+		// Collector for titles
+		let titles = [];
+
+		for (let child of subsections) {
+			titles.push(child["root"]);
+		}
+
+		return titles; 
+
 	}
 }
 
