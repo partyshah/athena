@@ -13,7 +13,7 @@ class FindLesson extends Component {
 	}
 
 	genFlowTree() {
-		return [this.genPickSubject, ];
+		return [this.genPickSubject, this.genPickGradeLevel];
 	}
 
 	genPickSubject = () => {
@@ -32,6 +32,28 @@ class FindLesson extends Component {
 			   		<div className="button-spine-0"> {subjects} </div>
 			   	</div>
 			);
+	}
+
+	genPickGradeLevel = () => {
+
+		let levels = [];
+
+		lessonStore.move("math");
+
+		let sections = lessonStore.getSubsections();
+		let sectionTitles = lessonStore.getAllSubsectionTitles(sections);
+
+		for (let title of sectionTitles) {
+			levels.push(<div value={title} className="button-0"> {title} </div>)
+		}
+
+		return (
+			<div>
+				<div className="title-0">Pick Level</div>
+				<div className="button-spine-0"> {levels} </div>
+			</div>
+		);
+
 	}
 
 	onNext = () => {
